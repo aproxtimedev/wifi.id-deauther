@@ -3,7 +3,7 @@ sendkill(){
 	local bssid=$2
 	local mac=$1
 	local interface=$3
-    local packet=$4
+    	local packet=$4
 	aireplay-ng -0 $packet -a $bssid -c $mac $interface --ignore-negative-one	
 }
 
